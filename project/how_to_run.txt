@@ -1,0 +1,30 @@
+Instructions for using websockets between python simulator client (simulatorAPI.py) and the C++ server (cserver)
+
+1. Get the dependancies for cserver and build it
+
+	cd project
+	./install-ubuntu.sh
+	cd cserver_dir
+	cmake .
+	make
+	
+2. Running the server and the client
+
+	// first launch Carla in new terminal window
+	./opt/carla-simulator/CarlaUE4.sh
+
+	// next launch the server in new terminal window
+	cd project
+	./cserver_dir/cserver
+
+	// finally launch the client in new terminal window
+	python3 simulatorAPI.py
+
+3. Closing the program
+
+	// kill the server first or else Carla will not reset the environment TODO(try to fix that)
+	// (cntrl+x) for cserver window 
+	// (cntrl+x) for client window
+	// close Carla
+	
+
