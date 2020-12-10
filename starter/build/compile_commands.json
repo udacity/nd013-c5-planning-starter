@@ -1,0 +1,595 @@
+[
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/Buffer.cpp.o -c /home/munir/carla/LibCarla/source/carla/Buffer.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/Buffer.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/Exception.cpp.o -c /home/munir/carla/LibCarla/source/carla/Exception.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/Exception.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/FileSystem.cpp.o -c /home/munir/carla/LibCarla/source/carla/FileSystem.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/FileSystem.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/StringUtil.cpp.o -c /home/munir/carla/LibCarla/source/carla/StringUtil.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/StringUtil.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/client/Actor.cpp.o -c /home/munir/carla/LibCarla/source/carla/client/Actor.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/client/Actor.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/client/ActorAttribute.cpp.o -c /home/munir/carla/LibCarla/source/carla/client/ActorAttribute.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/client/ActorAttribute.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/client/ActorBlueprint.cpp.o -c /home/munir/carla/LibCarla/source/carla/client/ActorBlueprint.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/client/ActorBlueprint.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/client/ActorList.cpp.o -c /home/munir/carla/LibCarla/source/carla/client/ActorList.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/client/ActorList.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/client/BlueprintLibrary.cpp.o -c /home/munir/carla/LibCarla/source/carla/client/BlueprintLibrary.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/client/BlueprintLibrary.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/client/DebugHelper.cpp.o -c /home/munir/carla/LibCarla/source/carla/client/DebugHelper.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/client/DebugHelper.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/client/Junction.cpp.o -c /home/munir/carla/LibCarla/source/carla/client/Junction.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/client/Junction.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/client/LaneInvasionSensor.cpp.o -c /home/munir/carla/LibCarla/source/carla/client/LaneInvasionSensor.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/client/LaneInvasionSensor.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/client/Light.cpp.o -c /home/munir/carla/LibCarla/source/carla/client/Light.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/client/Light.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/client/LightManager.cpp.o -c /home/munir/carla/LibCarla/source/carla/client/LightManager.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/client/LightManager.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/client/Map.cpp.o -c /home/munir/carla/LibCarla/source/carla/client/Map.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/client/Map.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/client/ServerSideSensor.cpp.o -c /home/munir/carla/LibCarla/source/carla/client/ServerSideSensor.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/client/ServerSideSensor.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/client/TimeoutException.cpp.o -c /home/munir/carla/LibCarla/source/carla/client/TimeoutException.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/client/TimeoutException.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/client/TrafficLight.cpp.o -c /home/munir/carla/LibCarla/source/carla/client/TrafficLight.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/client/TrafficLight.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/client/TrafficSign.cpp.o -c /home/munir/carla/LibCarla/source/carla/client/TrafficSign.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/client/TrafficSign.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/client/Vehicle.cpp.o -c /home/munir/carla/LibCarla/source/carla/client/Vehicle.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/client/Vehicle.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/client/Walker.cpp.o -c /home/munir/carla/LibCarla/source/carla/client/Walker.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/client/Walker.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/client/WalkerAIController.cpp.o -c /home/munir/carla/LibCarla/source/carla/client/WalkerAIController.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/client/WalkerAIController.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/client/Waypoint.cpp.o -c /home/munir/carla/LibCarla/source/carla/client/Waypoint.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/client/Waypoint.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/client/World.cpp.o -c /home/munir/carla/LibCarla/source/carla/client/World.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/client/World.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/client/detail/ActorFactory.cpp.o -c /home/munir/carla/LibCarla/source/carla/client/detail/ActorFactory.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/client/detail/ActorFactory.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/client/detail/ActorState.cpp.o -c /home/munir/carla/LibCarla/source/carla/client/detail/ActorState.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/client/detail/ActorState.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/client/detail/ActorVariant.cpp.o -c /home/munir/carla/LibCarla/source/carla/client/detail/ActorVariant.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/client/detail/ActorVariant.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/client/detail/Client.cpp.o -c /home/munir/carla/LibCarla/source/carla/client/detail/Client.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/client/detail/Client.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/client/detail/Episode.cpp.o -c /home/munir/carla/LibCarla/source/carla/client/detail/Episode.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/client/detail/Episode.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/client/detail/EpisodeProxy.cpp.o -c /home/munir/carla/LibCarla/source/carla/client/detail/EpisodeProxy.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/client/detail/EpisodeProxy.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/client/detail/EpisodeState.cpp.o -c /home/munir/carla/LibCarla/source/carla/client/detail/EpisodeState.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/client/detail/EpisodeState.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/client/detail/Simulator.cpp.o -c /home/munir/carla/LibCarla/source/carla/client/detail/Simulator.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/client/detail/Simulator.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/client/detail/WalkerNavigation.cpp.o -c /home/munir/carla/LibCarla/source/carla/client/detail/WalkerNavigation.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/client/detail/WalkerNavigation.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/geom/GeoLocation.cpp.o -c /home/munir/carla/LibCarla/source/carla/geom/GeoLocation.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/geom/GeoLocation.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/geom/Math.cpp.o -c /home/munir/carla/LibCarla/source/carla/geom/Math.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/geom/Math.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/geom/Mesh.cpp.o -c /home/munir/carla/LibCarla/source/carla/geom/Mesh.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/geom/Mesh.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/nav/Navigation.cpp.o -c /home/munir/carla/LibCarla/source/carla/nav/Navigation.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/nav/Navigation.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/nav/WalkerEvent.cpp.o -c /home/munir/carla/LibCarla/source/carla/nav/WalkerEvent.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/nav/WalkerEvent.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/nav/WalkerManager.cpp.o -c /home/munir/carla/LibCarla/source/carla/nav/WalkerManager.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/nav/WalkerManager.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/opendrive/OpenDriveParser.cpp.o -c /home/munir/carla/LibCarla/source/carla/opendrive/OpenDriveParser.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/opendrive/OpenDriveParser.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/opendrive/parser/ControllerParser.cpp.o -c /home/munir/carla/LibCarla/source/carla/opendrive/parser/ControllerParser.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/opendrive/parser/ControllerParser.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/opendrive/parser/GeoReferenceParser.cpp.o -c /home/munir/carla/LibCarla/source/carla/opendrive/parser/GeoReferenceParser.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/opendrive/parser/GeoReferenceParser.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/opendrive/parser/GeometryParser.cpp.o -c /home/munir/carla/LibCarla/source/carla/opendrive/parser/GeometryParser.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/opendrive/parser/GeometryParser.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/opendrive/parser/JunctionParser.cpp.o -c /home/munir/carla/LibCarla/source/carla/opendrive/parser/JunctionParser.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/opendrive/parser/JunctionParser.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/opendrive/parser/LaneParser.cpp.o -c /home/munir/carla/LibCarla/source/carla/opendrive/parser/LaneParser.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/opendrive/parser/LaneParser.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/opendrive/parser/ObjectParser.cpp.o -c /home/munir/carla/LibCarla/source/carla/opendrive/parser/ObjectParser.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/opendrive/parser/ObjectParser.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/opendrive/parser/ProfilesParser.cpp.o -c /home/munir/carla/LibCarla/source/carla/opendrive/parser/ProfilesParser.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/opendrive/parser/ProfilesParser.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/opendrive/parser/RoadParser.cpp.o -c /home/munir/carla/LibCarla/source/carla/opendrive/parser/RoadParser.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/opendrive/parser/RoadParser.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/opendrive/parser/SignalParser.cpp.o -c /home/munir/carla/LibCarla/source/carla/opendrive/parser/SignalParser.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/opendrive/parser/SignalParser.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/opendrive/parser/TrafficGroupParser.cpp.o -c /home/munir/carla/LibCarla/source/carla/opendrive/parser/TrafficGroupParser.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/opendrive/parser/TrafficGroupParser.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/road/Lane.cpp.o -c /home/munir/carla/LibCarla/source/carla/road/Lane.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/road/Lane.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/road/LaneSection.cpp.o -c /home/munir/carla/LibCarla/source/carla/road/LaneSection.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/road/LaneSection.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/road/Map.cpp.o -c /home/munir/carla/LibCarla/source/carla/road/Map.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/road/Map.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/road/MapBuilder.cpp.o -c /home/munir/carla/LibCarla/source/carla/road/MapBuilder.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/road/MapBuilder.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/road/MapData.cpp.o -c /home/munir/carla/LibCarla/source/carla/road/MapData.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/road/MapData.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/road/MeshFactory.cpp.o -c /home/munir/carla/LibCarla/source/carla/road/MeshFactory.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/road/MeshFactory.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/road/Road.cpp.o -c /home/munir/carla/LibCarla/source/carla/road/Road.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/road/Road.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/road/SignalType.cpp.o -c /home/munir/carla/LibCarla/source/carla/road/SignalType.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/road/SignalType.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/road/element/Geometry.cpp.o -c /home/munir/carla/LibCarla/source/carla/road/element/Geometry.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/road/element/Geometry.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/road/element/LaneCrossingCalculator.cpp.o -c /home/munir/carla/LibCarla/source/carla/road/element/LaneCrossingCalculator.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/road/element/LaneCrossingCalculator.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/road/element/LaneMarking.cpp.o -c /home/munir/carla/LibCarla/source/carla/road/element/LaneMarking.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/road/element/LaneMarking.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/road/element/Waypoint.cpp.o -c /home/munir/carla/LibCarla/source/carla/road/element/Waypoint.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/road/element/Waypoint.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/rpc/WeatherParameters.cpp.o -c /home/munir/carla/LibCarla/source/carla/rpc/WeatherParameters.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/rpc/WeatherParameters.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/sensor/Deserializer.cpp.o -c /home/munir/carla/LibCarla/source/carla/sensor/Deserializer.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/sensor/Deserializer.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/sensor/data/LaneInvasionEvent.cpp.o -c /home/munir/carla/LibCarla/source/carla/sensor/data/LaneInvasionEvent.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/sensor/data/LaneInvasionEvent.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/sensor/s11n/CollisionEventSerializer.cpp.o -c /home/munir/carla/LibCarla/source/carla/sensor/s11n/CollisionEventSerializer.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/sensor/s11n/CollisionEventSerializer.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/sensor/s11n/DVSEventArraySerializer.cpp.o -c /home/munir/carla/LibCarla/source/carla/sensor/s11n/DVSEventArraySerializer.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/sensor/s11n/DVSEventArraySerializer.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/sensor/s11n/EpisodeStateSerializer.cpp.o -c /home/munir/carla/LibCarla/source/carla/sensor/s11n/EpisodeStateSerializer.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/sensor/s11n/EpisodeStateSerializer.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/sensor/s11n/GnssSerializer.cpp.o -c /home/munir/carla/LibCarla/source/carla/sensor/s11n/GnssSerializer.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/sensor/s11n/GnssSerializer.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/sensor/s11n/IMUSerializer.cpp.o -c /home/munir/carla/LibCarla/source/carla/sensor/s11n/IMUSerializer.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/sensor/s11n/IMUSerializer.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/sensor/s11n/ImageSerializer.cpp.o -c /home/munir/carla/LibCarla/source/carla/sensor/s11n/ImageSerializer.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/sensor/s11n/ImageSerializer.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/sensor/s11n/LidarSerializer.cpp.o -c /home/munir/carla/LibCarla/source/carla/sensor/s11n/LidarSerializer.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/sensor/s11n/LidarSerializer.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/sensor/s11n/NoopSerializer.cpp.o -c /home/munir/carla/LibCarla/source/carla/sensor/s11n/NoopSerializer.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/sensor/s11n/NoopSerializer.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/sensor/s11n/ObstacleDetectionEventSerializer.cpp.o -c /home/munir/carla/LibCarla/source/carla/sensor/s11n/ObstacleDetectionEventSerializer.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/sensor/s11n/ObstacleDetectionEventSerializer.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/sensor/s11n/RadarSerializer.cpp.o -c /home/munir/carla/LibCarla/source/carla/sensor/s11n/RadarSerializer.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/sensor/s11n/RadarSerializer.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/sensor/s11n/SemanticLidarSerializer.cpp.o -c /home/munir/carla/LibCarla/source/carla/sensor/s11n/SemanticLidarSerializer.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/sensor/s11n/SemanticLidarSerializer.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/sensor/s11n/SensorHeaderSerializer.cpp.o -c /home/munir/carla/LibCarla/source/carla/sensor/s11n/SensorHeaderSerializer.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/sensor/s11n/SensorHeaderSerializer.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/streaming/detail/Dispatcher.cpp.o -c /home/munir/carla/LibCarla/source/carla/streaming/detail/Dispatcher.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/streaming/detail/Dispatcher.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/streaming/detail/StreamStateBase.cpp.o -c /home/munir/carla/LibCarla/source/carla/streaming/detail/StreamStateBase.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/streaming/detail/StreamStateBase.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/streaming/detail/Token.cpp.o -c /home/munir/carla/LibCarla/source/carla/streaming/detail/Token.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/streaming/detail/Token.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/streaming/detail/tcp/Client.cpp.o -c /home/munir/carla/LibCarla/source/carla/streaming/detail/tcp/Client.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/streaming/detail/tcp/Client.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/streaming/detail/tcp/Server.cpp.o -c /home/munir/carla/LibCarla/source/carla/streaming/detail/tcp/Server.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/streaming/detail/tcp/Server.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/streaming/detail/tcp/ServerSession.cpp.o -c /home/munir/carla/LibCarla/source/carla/streaming/detail/tcp/ServerSession.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/streaming/detail/tcp/ServerSession.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/third-party/odrSpiral/odrSpiral.cpp.o -c /home/munir/carla/LibCarla/source/third-party/odrSpiral/odrSpiral.cpp",
+  "file": "/home/munir/carla/LibCarla/source/third-party/odrSpiral/odrSpiral.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/third-party/pugixml/pugixml.cpp.o -c /home/munir/carla/LibCarla/source/third-party/pugixml/pugixml.cpp",
+  "file": "/home/munir/carla/LibCarla/source/third-party/pugixml/pugixml.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/trafficmanager/ALSM.cpp.o -c /home/munir/carla/LibCarla/source/carla/trafficmanager/ALSM.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/trafficmanager/ALSM.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/trafficmanager/CollisionStage.cpp.o -c /home/munir/carla/LibCarla/source/carla/trafficmanager/CollisionStage.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/trafficmanager/CollisionStage.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/trafficmanager/InMemoryMap.cpp.o -c /home/munir/carla/LibCarla/source/carla/trafficmanager/InMemoryMap.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/trafficmanager/InMemoryMap.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/trafficmanager/LocalizationStage.cpp.o -c /home/munir/carla/LibCarla/source/carla/trafficmanager/LocalizationStage.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/trafficmanager/LocalizationStage.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/trafficmanager/LocalizationUtils.cpp.o -c /home/munir/carla/LibCarla/source/carla/trafficmanager/LocalizationUtils.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/trafficmanager/LocalizationUtils.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/trafficmanager/MotionPlanStage.cpp.o -c /home/munir/carla/LibCarla/source/carla/trafficmanager/MotionPlanStage.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/trafficmanager/MotionPlanStage.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/trafficmanager/Parameters.cpp.o -c /home/munir/carla/LibCarla/source/carla/trafficmanager/Parameters.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/trafficmanager/Parameters.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/trafficmanager/SimpleWaypoint.cpp.o -c /home/munir/carla/LibCarla/source/carla/trafficmanager/SimpleWaypoint.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/trafficmanager/SimpleWaypoint.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/trafficmanager/SimulationState.cpp.o -c /home/munir/carla/LibCarla/source/carla/trafficmanager/SimulationState.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/trafficmanager/SimulationState.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/trafficmanager/TrackTraffic.cpp.o -c /home/munir/carla/LibCarla/source/carla/trafficmanager/TrackTraffic.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/trafficmanager/TrackTraffic.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/trafficmanager/TrafficLightStage.cpp.o -c /home/munir/carla/LibCarla/source/carla/trafficmanager/TrafficLightStage.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/trafficmanager/TrafficLightStage.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/trafficmanager/TrafficManager.cpp.o -c /home/munir/carla/LibCarla/source/carla/trafficmanager/TrafficManager.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/trafficmanager/TrafficManager.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/trafficmanager/TrafficManagerLocal.cpp.o -c /home/munir/carla/LibCarla/source/carla/trafficmanager/TrafficManagerLocal.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/trafficmanager/TrafficManagerLocal.cpp"
+},
+
+{
+  "directory": "/home/munir/carla/nd013-c5-planning-refresh/project/solution_cubic_spirals/build",
+  "command": "/usr/bin/g++-7  -DBOOST_ERROR_CODE_HEADER_ONLY -DLIBCARLA_IMAGE_WITH_PNG_SUPPORT=true -DLIBCARLA_TEST_CONTENT_FOLDER=\\\"/home/munir/carla/Build/test-content\\\" -I../../../../LibCarla/cmake/../source -I../../../../LibCarla/cmake/../source/third-party -isystem ../../../../Build/boost-1.72.0-c8-install/include -isystem ../../../../Build/rpclib-v2.2.1_c3-c8-libstdcxx-install/include -isystem ../../../../Build/recast-cdce4e-c8-install/include -isystem ../../../../Build/libpng-1.6.37-install/include   -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra  -std=c++17 -pthread -fPIC -O3 -DNDEBUG  -Wall -Wextra    -O3 -DNDEBUG -o LibCarla/cmake/client/CMakeFiles/carla_client.dir/__/__/source/carla/trafficmanager/TrafficManagerRemote.cpp.o -c /home/munir/carla/LibCarla/source/carla/trafficmanager/TrafficManagerRemote.cpp",
+  "file": "/home/munir/carla/LibCarla/source/carla/trafficmanager/TrafficManagerRemote.cpp"
+}
+]
