@@ -544,12 +544,6 @@ $RECYCLE.BIN/
 ######################################################################
 # Udacity customizations
 
-/ToolChain.cmake
-/bin
-/build
-/libcarla-install
-_*
-
 # In-tree build directories.
 build*/
 Build/
