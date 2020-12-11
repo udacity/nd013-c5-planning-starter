@@ -49,30 +49,30 @@ std::vector<TrajectoryPoint> VelocityProfileGenerator::generate_trajectory(
     const std::vector<PathPoint>& spiral, const double& desired_speed,
     const State& ego_state, const State& lead_car_state,
     const Maneuver& maneuver) const {
-  LOG(INFO) << "Lead car x: " << lead_car_state.location.x;
+  // LOG(INFO) << "Lead car x: " << lead_car_state.location.x;
 
   std::vector<TrajectoryPoint> trajectory;
   double start_speed = utils::magnitude(ego_state.velocity);
 
-  LOG(INFO) << "Start Speed (m/s): " << start_speed;
-  LOG(INFO) << "Desired Speed (m/s): " << desired_speed;
+  // LOG(INFO) << "Start Speed (m/s): " << start_speed;
+  // LOG(INFO) << "Desired Speed (m/s): " << desired_speed;
 
   // Generate a trapezoidal trajectory to decelerate to stop.
   if (maneuver == DECEL_TO_STOP) {
-    LOG(INFO) << "Generating velocity trajectory for DECEL_TO_STOP";
+    // LOG(INFO) << "Generating velocity trajectory for DECEL_TO_STOP";
     trajectory = decelerate_trajectory(spiral, start_speed);
   }
   // If we need to follow the lead vehicle, make sure we decelerate to its speed
   // by the time we reach the time gap point.
   else if (maneuver == FOLLOW_VEHICLE) {
-    LOG(INFO) << "Generating velocity trajectory for FOLLOW_VEHICLE";
+    // LOG(INFO) << "Generating velocity trajectory for FOLLOW_VEHICLE";
     trajectory =
         follow_trajectory(spiral, start_speed, desired_speed, lead_car_state);
   }
 
   // Otherwise, compute the trajectory to reach our desired speed.
   else {
-    LOG(INFO) << "Generating velocity trajectory for NOMINAL TRAVEL";
+    // LOG(INFO) << "Generating velocity trajectory for NOMINAL TRAVEL";
     trajectory = nominal_trajectory(spiral, start_speed, desired_speed);
   }
   // Interpolate between the zeroth state and the first state.
@@ -168,7 +168,7 @@ std::vector<TrajectoryPoint> VelocityProfileGenerator::decelerate_trajectory(
       --brake_index;
     }
     // Compute the index to stop decelerating to the slow speed.
-    int decel_index{0};
+    uint decel_index{0};
     temp_dist = 0.0;
     while ((decel_index < brake_index) and (temp_dist < decel_distance)) {
       temp_dist +=
@@ -248,12 +248,12 @@ std::vector<TrajectoryPoint> VelocityProfileGenerator::nominal_trajectory(
   std::vector<TrajectoryPoint> trajectory;
   double accel_distance;
 
-  LOG(INFO) << "MAX_ACCEL: " << _a_max;
+  // LOG(INFO) << "MAX_ACCEL: " << _a_max;
   if (desired_speed < start_speed) {
-    LOG(INFO) << "decelerate";
+    // LOG(INFO) << "decelerate";
     accel_distance = calc_distance(start_speed, desired_speed, -_a_max);
   } else {
-    LOG(INFO) << "accelerate";
+    // LOG(INFO) << "accelerate";
     accel_distance = calc_distance(start_speed, desired_speed, _a_max);
   }
 
@@ -264,7 +264,7 @@ std::vector<TrajectoryPoint> VelocityProfileGenerator::nominal_trajectory(
         utils::distance(spiral[ramp_end_index], spiral[ramp_end_index + 1]);
     ramp_end_index += 1;
   }
-  LOG(INFO) << "ramp_end_index:" << ramp_end_index;
+  // LOG(INFO) << "ramp_end_index:" << ramp_end_index;
 
   double time_step{0.0};
   double time{0.0};
@@ -292,10 +292,11 @@ std::vector<TrajectoryPoint> VelocityProfileGenerator::nominal_trajectory(
     traj_point.relative_time = time;
     trajectory.push_back(traj_point);
 
-    LOG(INFO) << i << "- x: " << traj_point.path_point.x
-              << ", y: " << traj_point.path_point.y
-              << ", th: " << traj_point.path_point.theta
-              << ", v: " << traj_point.v << ", t: " << traj_point.relative_time;
+    // LOG(INFO) << i << "- x: " << traj_point.path_point.x
+    //          << ", y: " << traj_point.path_point.y
+    //          << ", th: " << traj_point.path_point.theta
+    //          << ", v: " << traj_point.v << ", t: " <<
+    //          traj_point.relative_time;
     time_step = std::fabs(vf - vi) / _a_max;
     time += time_step;
     vi = vf;
@@ -318,10 +319,11 @@ std::vector<TrajectoryPoint> VelocityProfileGenerator::nominal_trajectory(
     }
     time += time_step;
 
-    LOG(INFO) << i << "- x: " << traj_point.path_point.x
-              << ", y: " << traj_point.path_point.y
-              << ", th: " << traj_point.path_point.theta
-              << ", v: " << traj_point.v << ", t: " << traj_point.relative_time;
+    // LOG(INFO) << i << "- x: " << traj_point.path_point.x
+    //          << ", y: " << traj_point.path_point.y
+    //          << ", th: " << traj_point.path_point.theta
+    //          << ", v: " << traj_point.v << ", t: " <<
+    //          traj_point.relative_time;
   }
   // Add last point
   auto i = spiral.size() - 1;
@@ -330,12 +332,12 @@ std::vector<TrajectoryPoint> VelocityProfileGenerator::nominal_trajectory(
   traj_point.v = desired_speed;
   traj_point.relative_time = time;
   trajectory.push_back(traj_point);
-  LOG(INFO) << i << "- x: " << traj_point.path_point.x
-            << ", y: " << traj_point.path_point.y
-            << ", th: " << traj_point.path_point.theta
-            << ", v: " << traj_point.v << ", t: " << traj_point.relative_time;
+  // LOG(INFO) << i << "- x: " << traj_point.path_point.x
+  //          << ", y: " << traj_point.path_point.y
+  //          << ", th: " << traj_point.path_point.theta
+  //          << ", v: " << traj_point.v << ", t: " << traj_point.relative_time;
 
-  LOG(INFO) << "Trajectory Generated";
+  // LOG(INFO) << "Trajectory Generated";
   return trajectory;
 }
 
@@ -360,7 +362,7 @@ double VelocityProfileGenerator::calc_distance(const double& v_i,
     // v_i (initial velocity) to v_f (final velocity) at a constant
     // acceleration/deceleration "a". HINT look at the description of this
     // function. Make sure you handle div by 0
-    d = 0.0;
+    d = ;  // <- Fix This
   }
   return d;
 }
@@ -383,5 +385,16 @@ double VelocityProfileGenerator::calc_final_speed(const double& v_i,
   // and make v_f = 0 in that case. If the discriminant is inf or nan return
   // infinity
 
+  double disc = ;  // <- Fix this
+  if (disc <= 0.0) {
+    v_f = 0.0;
+  } else if (disc == std::numeric_limits<double>::infinity() ||
+             std::isnan(disc)) {
+    v_f = std::numeric_limits<double>::infinity();
+  } else {
+    v_f = std::sqrt(disc);
+  }
+  //   std::cout << "v_i, a, d: " << v_i << ", " << a << ", " << d
+  //             << ",  v_f: " << v_f << std::endl;
   return v_f;
 }

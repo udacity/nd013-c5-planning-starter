@@ -61,60 +61,43 @@ More details can be found at [CARLA Quick Start Installation](https://carla.read
    git clone https://github.com/udacity/nd013-c5-planning-refresh.git
    ```
  
-* Make sure ALL is working well:
+Make sure ALL is working well:
+---------------
    * Open a terminal an launch CARLA (if you don't have it open already):
    ```
    cd /opt/carla-simulator
    # Linux
    ./CarlaUE4.sh
-
-   # Windows:
-   CarlaUE4.exe
    ```   
-   * Open another terminal and launch Udacity’s Decision making & Motion Planning application:
- 
-   ```
-   cd sdcnd_c5/nd013-c5-planning-refresh/project/solution_cubic_spirals_STARTER
-   make run
-   ```
-* Follow the TODO’s on the project plan and code all your changes.
- 
-> NOTE:
->
-> To just compile use:
-> ```
-> make
-> ```
-> To compile and run use:
-> ```
-> make run
-> ``` 
-> To just run the latest compiled project use
-> ```
-> make run.only
-> ```
-> 
-
-## Testing
-
-Explain the steps needed to run any automated tests
-
-### Break Down Tests
-
-Explain what each test does and why
+   * Open another terminal and launch Udacity’s Decision making & Motion Planning application and Compile it
+```
+cd project/solution_cubic_spirals_integrated
+cmake .
+make
+```
+* Run it
 
 ```
-Examples here
+cd project/solution_cubic_spirals_integrated
+./spiral_planner
 ```
-## Project Instructions
 
-This section should contain all the student deliverables for this project.
+* Open new window
 
-## Built With
+```
+cd project
+python3 simulatorAPI.py
+```
 
-* [Item1](www.item1.com) - Description of item
-* [Item2](www.item2.com) - Description of item
-* [Item3](www.item3.com) - Description of item
+Camera Control for spectator window from carla server script
+
+key listener is from python script window, then use arrow keys to change camera angle
+and use w/s to change camera zoom
+
+IF rpclib is not a populated folder can get the source files with
+git clone https://github.com/carla-simulator/rpclib.git
+
+## Follow the TODO’s on the project plan and code all your changes.
 
 Include all items used to build project.
 

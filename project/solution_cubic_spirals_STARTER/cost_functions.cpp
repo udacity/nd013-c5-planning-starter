@@ -35,45 +35,43 @@ double diff_cost(vector<double> coeff, double duration,
   return cost_weight * cost;
 }
 
-double collision_circles_cost_spiral(
-    const std::vector<PathPoint>& spiral,
-    const std::vector<SharedPtr<cc::Actor>>& obstacles) {
+double collision_circles_cost_spiral(const std::vector<PathPoint>& spiral,
+                                     const std::vector<State>& obstacles) {
   bool collision{false};
   auto n_circles = CIRCLE_OFFSETS.size();
 
   for (auto wp : spiral) {
     if (collision) {
-      LOG(INFO) << " ***** COLLISION DETECTED *********" << std::endl;
+      // LOG(INFO) << " ***** COLLISION DETECTED *********" << std::endl;
       break;
     }
     double cur_x = wp.x;
     double cur_y = wp.y;
     double cur_yaw = wp.theta;  // This is already in rad.
 
-    for (size_t c = 0; c < n_circles; c++) {
+    for (size_t c = 0; c < n_circles && !collision; ++c) {
       // TODO-Circle placement: Where should the circles be at? The code below
       // is NOT complete. HINT: use CIRCLE_OFFSETS[c], sine and cosine to
-      // calculate x and y
-      auto circle_center_x = cur_x;  // + something
-      auto circle_center_y = cur_y;  // + soemthing
+      // calculate x and y: cur_y + CIRCLE_OFFSETS[c] * std::sin/cos(cur_yaw)
+      auto circle_center_x = ;  // <- Fix This
+      auto circle_center_y = ;  // <- Fix This
 
-      for (auto actor : obstacles) {
+      for (auto obst : obstacles) {
         if (collision) {
           break;
         }
-        auto actor_location = actor->GetLocation();
-        auto actor_yaw = actor->GetTransform().rotation.yaw;
+        auto actor_yaw = obst.rotation.yaw;
         for (size_t c2 = 0; c2 < n_circles && !collision; ++c2) {
           auto actor_center_x =
-              actor_location.x + CIRCLE_OFFSETS[c2] * std::cos(actor_yaw);
+              obst.location.x + CIRCLE_OFFSETS[c2] * std::cos(actor_yaw);
           auto actor_center_y =
-              actor_location.y + CIRCLE_OFFSETS[c2] * std::sin(actor_yaw);
+              obst.location.y + CIRCLE_OFFSETS[c2] * std::sin(actor_yaw);
 
           // TODO-Distance from circles to obstacles/actor: How do you calculate
           // the distance between the center of each circle and the
           // obstacle/actor
-          double dist = 500;  // <- this is obviosly not correct. Add the
-                              // correct calculation.
+          double dist = ;  // <- Fix This
+
           collision = (dist < (CIRCLE_RADII[c] + CIRCLE_RADII[c2]));
         }
       }
@@ -92,18 +90,19 @@ double close_to_main_goal_cost_spiral(const std::vector<PathPoint>& spiral,
   // TODO-distance between last point on spiral and main goal: How do we
   // calculate the distance between the last point on the spiral (spiral[n-1])
   // and the main goal (main_goal.location). Use spiral[n - 1].x, spiral[n -
-  // 1].y and spiral[n - 1].z Use main_goal.location.x, main_goal.location.y and
-  // main_goal.location.z
-  auto delta_x = 100;  // <- Fix this
-  auto delta_y = 100;  // <- Fix this
-  auto delta_z = 100;  // <- Fix this
+  // 1].y and spiral[n - 1].z.
+  // Use main_goal.location.x, main_goal.location.y and main_goal.location.z
+  // Ex: main_goal.location.x - spiral[n - 1].x
+  auto delta_x = ;  // <- Fix This
+  auto delta_y = ;  // <- Fix This
+  auto delta_z = ;  // <- Fix This
 
   auto dist = std::sqrt((delta_x * delta_x) + (delta_y * delta_y) +
                         (delta_z * delta_z));
 
   auto cost = logistic(dist);
-  LOG(INFO) << "distance to main goal: " << dist;
-  LOG(INFO) << "cost (log): " << cost;
+  // LOG(INFO) << "distance to main goal: " << dist;
+  // LOG(INFO) << "cost (log): " << cost;
   return cost;
 }
 }  // namespace cost_functions

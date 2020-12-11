@@ -62,8 +62,6 @@ import asyncio
 import json
 from websocket import create_connection
 
-_throttle = 0.0
-_steer = 0.0
 way_points = []
 v_points = []
 spirals_x = []
@@ -201,25 +199,7 @@ class World(object):
   
         return point.x, point.y, waypoint.transform.rotation.yaw * math.pi/180, is_goal_junction
 
-    def trim_waypoints(self, pos_x, pos_y):
-        global way_points, v_points
-        if( len(way_points) > 1):
-            closest_dist = 1000
-            for path_index in range(len(way_points)):
-    
-                new_x = way_points[path_index].location.x
-                new_y = way_points[path_index].location.y
-                dist = math.sqrt(math.pow(new_x-pos_x, 2)+math.pow(new_y-pos_y, 2))
-                if dist < closest_dist:
-                    start_index = path_index
-                    closest_dist = dist
-                
-            #print("start index ", start_index) # test if start_index is moving
-        
-            way_points = way_points[start_index:]
-            v_points = v_points[start_index:]
-
-    def move(self, sim_time, throttle, steer, res=1):
+    def move(self, sim_time, res=1):
         global way_points, v_points, last_move_time, velocity, _prev_yaw, _view_yaw, _view_pitch, _view_radius, _pivot
         previous_index = 0
         start = carla.Transform()
@@ -237,13 +217,10 @@ class World(object):
             start = carla.Transform()
             end = carla.Transform()
             color = blue
-            if len(spiral_idx) == 0:
+            if i == spiral_idx[-1]:
+                color = green
+            elif i in spiral_idx[:-1]:
                 color = red
-            else:
-                if i == spiral_idx[-1]:
-                    color = green
-                elif i in spiral_idx[:-1]:
-                    color = red
             for index in range(1, len(spirals_x[i])):
                 start.location.x = spirals_x[i][previous_index]
                 start.location.y = spirals_y[i][previous_index]
@@ -265,33 +242,66 @@ class World(object):
             self.world.debug.draw_line(start.location, end.location, 0.1, carla.Color(r=125, g=125, b=0), .1)
             previous_index = index
         
-        # move car
-        _pivot.location = self.player.get_transform().location
-        _pivot.location.x += _view_radius * math.cos(math.pi + _view_yaw)
-        _pivot.location.y += _view_radius * math.sin(math.pi + _view_yaw)
-        _view_yaw += _view_yaw_change
-        _view_pitch += _view_pitch_change
-        _view_radius += _view_radius_change
-        _view_radius = min( max(10, _view_radius), 100)
-        while _view_yaw < -math.pi:
-            _view_yaw += math.pi
-        while _view_yaw > math.pi:
-            _view_yaw -= math.pi
-        while _view_pitch < -math.pi:
-            _view_pitch += math.pi
-        while _view_pitch > math.pi:
-            _view_pitch -= math.pi
-        _pivot.rotation.yaw  = _view_yaw * 180 / math.pi
-        _pivot.rotation.pitch  = _view_pitch * 180 / math.pi
-        _pivot.location.z += 2 + _view_radius * math.sin(math.pi + _view_pitch)
-        #self.spectator.set_transform(pivot)
-        
-        control = carla.VehicleControl()
-        control.throttle = _throttle
-        control.steer = _steer
-        self.player.apply_control(control)
-        self.trim_waypoints(self.player.get_transform().location.x, self.player.get_transform().location.y)
-        
+        # increase wait time for debug
+        wait_time = 0.0
+        delta_t = 0.05
+        if (sim_time - last_move_time) > wait_time:
+            last_move_time = sim_time
+            # move car using interpolation based on the velocity label form trajectory points
+            if len(way_points) > 1:
+                yaw = math.atan2(way_points[1].location.y-way_points[0].location.y, way_points[1].location.x-way_points[0].location.x)
+                velocity = v_points[0]
+                if velocity < 0.01 or _active_maneuver == 3:
+                    yaw = _prev_yaw
+                    way_points.pop(0)
+                    v_points.pop(0)
+                else:
+                    _prev_yaw = yaw
+                    D = velocity * delta_t
+                    d_interval = math.sqrt( (way_points[1].location.x - way_points[0].location.x )**2 + (way_points[1].location.y - way_points[0].location.y )**2  )
+                    while d_interval < D and len(way_points) > 2:
+                        D -= d_interval
+                        way_points.pop(0)
+                        v_points.pop(0)
+                        d_interval = math.sqrt( (way_points[1].location.x - way_points[0].location.x )**2 + (way_points[1].location.y - way_points[0].location.y )**2  )
+                    ratio = D / d_interval
+                    v_points[0] = ratio * (v_points[1]-v_points[0]) + v_points[0]
+                    way_points[0].location.x = ratio * (way_points[1].location.x - way_points[0].location.x) + way_points[0].location.x
+                    way_points[0].location.y = ratio * (way_points[1].location.y - way_points[0].location.y) + way_points[0].location.y
+                    yaw = math.atan2(way_points[1].location.y-way_points[0].location.y, way_points[1].location.x-way_points[0].location.x)
+                
+                
+                way_points[0].rotation.yaw = yaw * 180 / math.pi
+                way_points[0].rotation.pitch = _road_pitch
+                way_points[0].rotation.roll = _road_roll
+                way_points[0].location.z = _road_height
+
+
+                _pivot = carla.Transform()
+                _pivot.location = self.player.get_transform().location
+                _pivot.location.x += _view_radius * math.cos(math.pi + _view_yaw)
+                _pivot.location.y += _view_radius * math.sin(math.pi + _view_yaw)
+                _view_yaw += _view_yaw_change
+                _view_pitch += _view_pitch_change
+                _view_radius += _view_radius_change
+                _view_radius = min( max(10, _view_radius), 100)
+                while _view_yaw < -math.pi:
+                    _view_yaw += math.pi
+                while _view_yaw > math.pi:
+                    _view_yaw -= math.pi
+                while _view_pitch < -math.pi:
+                    _view_pitch += math.pi
+                while _view_pitch > math.pi:
+                    _view_pitch -= math.pi
+                _pivot.rotation.yaw  = _view_yaw * 180 / math.pi
+                _pivot.rotation.pitch  = _view_pitch * 180 / math.pi
+                _pivot.location.z += 2 + _view_radius * math.sin(math.pi + _view_pitch)
+                self.player.set_transform(way_points[0])
+                
+
+            
+
+
     def restart(self):
         self.player_max_speed = 1.589
         self.player_max_speed_fast = 3.713
@@ -670,7 +680,7 @@ class CameraManager(object):
             self.sensor = self._parent.get_world().spawn_actor(
                 self.sensors[index][-1],
                 self._camera_transforms[self.transform_index])
-                #attach_to=self._parent)
+                #attach_to=self._parent,
                 #attachment_type=self._camera_transforms[self.transform_index][1])
             # We need to pass the lambda a weak reference to self to avoid
             # circular reference.
@@ -745,6 +755,7 @@ class KeyboardControl(object):
                 if event.key == pygame.K_w or event.key == pygame.K_s:
                     _view_radius_change = 0
 
+
 # ==============================================================================
 # -- game_loop() ---------------------------------------------------------------
 # ==============================================================================
@@ -786,6 +797,8 @@ def game_loop(args):
         controller = KeyboardControl(world)
 
         clock = pygame.time.Clock()
+        
+        world.player.set_simulate_physics(False)
 
         # Spawn some obstacles to avoid
         batch = []
@@ -831,7 +844,7 @@ def game_loop(args):
             clock.tick_busy_loop(60)
             world.tick(clock)
             
-            world.move(sim_time, 0.25, 0.0)
+            world.move(sim_time)
             world.render(display)
             pygame.display.flip()
 
@@ -850,16 +863,15 @@ def game_loop(args):
 # -- main() --------------------------------------------------------------------
 # ==============================================================================
 
+
 def get_data():
-    global _throttle, _steer, way_points, v_points, update_cycle, spirals_x, spirals_y, spirals_v, spiral_idx, _active_maneuver
+    global way_points, v_points, update_cycle, spirals_x, spirals_y, spirals_v, spiral_idx, _active_maneuver
     data = ws.recv() # blocking call, thats why we use asyncio
     data = json.loads(str(data))
     dist_thresh = 0.1
     closest_dist = 1000
     start_index = 0
 
-    _throttle = data['throttle']
-    _steer = data['steer']
     spirals_x = data['spirals_x']
     spirals_y = data['spirals_y']
     spirals_v = data['spirals_v']

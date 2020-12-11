@@ -23,9 +23,6 @@ sudo apt-get install carla-simulator=0.9.10-2
 cd /opt/carla-simulator
 # Linux
 ./CarlaUE4.sh
-
-# Windows:
-CarlaUE4.exe
 ```
 
 More details can be found at [CARLA Quick Start Installation](https://carla.readthedocs.io/en/latest/start_quickstart/)  
@@ -45,9 +42,6 @@ More details can be found at [CARLA Quick Start Installation](https://carla.read
    cd /opt/carla-simulator
    # Linux
    ./CarlaUE4.sh
-
-   # Windows:
-   CarlaUE4.exe
    ```   
    * Open another terminal and launch Udacity’s Decision making & Motion Planning application:
  

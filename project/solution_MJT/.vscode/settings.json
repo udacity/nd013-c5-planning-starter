@@ -1,0 +1,21 @@
+{
+    "files.associations": {
+        "*.ipp": "cpp",
+        "cctype": "cpp",
+        "clocale": "cpp",
+        "cmath": "cpp",
+        "csetjmp": "cpp",
+        "csignal": "cpp",
+        "cstdarg": "cpp",
+        "cstddef": "cpp",
+        "cstdio": "cpp",
+        "cstdlib": "cpp",
+        "cstring": "cpp",
+        "ctime": "cpp",
+        "cwchar": "cpp",
+        "cwctype": "cpp",
+        "fft": "cpp",
+        "openglsupport": "cpp",
+        "core": "cpp"
+    }
+}
