@@ -64,5 +64,7 @@ New terminal window
 8. New window
 9.cd project
 10. ./run_main.sh
-	
 
+// If error bind is already in use, or address already being used
+ps -aux | grep carla
+kill id
