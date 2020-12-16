@@ -123,7 +123,7 @@ std::vector<TrajectoryPoint> VelocityProfileGenerator::decelerate_trajectory(
     auto it = speeds.begin();
     speeds.insert(it, 0.0);
 
-    // Let's now go backwards until we get to the very beggining of the path
+    // Let's now go backwards until we get to the very beginning of the path
     for (int i = stop_index - 1; i >= 0; --i) {
       auto dist = utils::distance(spiral[i + 1], spiral[i]);
       auto vi = calc_final_speed(vf, -_a_max, dist);
@@ -310,7 +310,7 @@ std::vector<TrajectoryPoint> VelocityProfileGenerator::nominal_trajectory(
     trajectory.push_back(traj_point);
 
     auto dist = utils::distance(spiral[i], spiral[i + 1]);
-    // This should never happen in a "nominal_trajjectory", but it's a sanity
+    // This should never happen in a "nominal_trajectory", but it's a sanity
     // check
     if (std::abs(desired_speed) < DBL_EPSILON) {
       time_step = 0.0;
@@ -362,7 +362,7 @@ double VelocityProfileGenerator::calc_distance(const double& v_i,
     // v_i (initial velocity) to v_f (final velocity) at a constant
     // acceleration/deceleration "a". HINT look at the description of this
     // function. Make sure you handle div by 0
-    d = ;  // <- Fix This
+    d = 0;  // <- Fix This
   }
   return d;
 }
@@ -385,7 +385,7 @@ double VelocityProfileGenerator::calc_final_speed(const double& v_i,
   // and make v_f = 0 in that case. If the discriminant is inf or nan return
   // infinity
 
-  double disc = ;  // <- Fix this
+  double disc = 0;  // <- Fix this
   if (disc <= 0.0) {
     v_f = 0.0;
   } else if (disc == std::numeric_limits<double>::infinity() ||
