@@ -34,4 +34,35 @@ Instructions for using websockets between python simulator client (simulatorAPI.
 	// (cntrl+x) for client window
 	// close Carla
 	
+	
+New terminal window
+1. su - student
+2. cd /opt/carla-simulator/
+3. SDL_VIDEODRIVER=offscreen ./CarlaUE4.sh -opengl
+
+New terminal window
+4. git clone https://github.com/udacity/nd013-c5-planning-refresh.git
+5. cd nd013-c5-planning-refresh/project
+6 ./install-ubuntu.sh
+7. cd solution-cubic-spirals
+8. rm -rf rpclib
+9. git clone https://github.com/rpclib/rpclib
+10. cmake .
+11. make
+12. cd nd013-c5-planning-refresh/project
+13. ./run_carla_ws.sh
+
+
+
+1. Clone project
+2. Cd project/solution_cubic_spirals
+3. cmake .
+4. make
+5. Cd project
+6.su - student
+7. ./run_carla.sh
+8. New window
+9.cd project
+10. ./run_main.sh
+	
 
