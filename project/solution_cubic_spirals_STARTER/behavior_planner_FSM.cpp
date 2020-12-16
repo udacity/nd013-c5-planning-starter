@@ -165,7 +165,7 @@ State BehaviorPlannerFSM::state_transition(const State& ego_state, State goal,
     // TODO-maintain the same goal when in DECEL_TO_STOP state: Make sure the
     // new goal is the same as the previous goal (_goal). That way we
     // keep/maintain the goal at the stop line.
-       goal = null;  // <- Fix This
+       goal = NULL;  // <- Fix This
 
     // TODO: It turns out that when we teleport, the car is always at speed
     // zero. In this the case, as soon as we enter the DECEL_TO_STOP state,
@@ -185,7 +185,7 @@ State BehaviorPlannerFSM::state_transition(const State& ego_state, State goal,
       // if (distance_to_stop_sign <= P_STOP_THRESHOLD_DISTANCE) {
       // TODO-move to STOPPED state: Now that we know we are close or at the
       // stopping point we should change state to "STOPPED"
-      _active_maneuver = null;  // <- Fix This
+      _active_maneuver = NULL;  // <- Fix This
       _start_stop_time = std::chrono::high_resolution_clock::now();
       // LOG(INFO) << "BP - changing to STOPPED";
     }
@@ -194,7 +194,7 @@ State BehaviorPlannerFSM::state_transition(const State& ego_state, State goal,
     // TODO-maintain the same goal when in STOPPED state: Make sure the new goal
     // is the same as the previous goal. That way we keep/maintain the goal at
     // the stop line. goal = ...;
-       goal = null;  // Keep previous goal. Stay where you are. // <- Fix This
+       goal = NULL;  // Keep previous goal. Stay where you are. // <- Fix This
 
     long long stopped_secs =
         std::chrono::duration_cast<std::chrono::seconds>(
@@ -205,7 +205,7 @@ State BehaviorPlannerFSM::state_transition(const State& ego_state, State goal,
     if (stopped_secs >= _req_stop_time && tl_state.compare("Red") != 0) {
       // TODO-move to FOLLOW_LANE state: What state do we want to move to, when
       // we are "done" at the STOPPED state?
-      _active_maneuver = null;  // <- Fix This
+      _active_maneuver = NULL;  // <- Fix This
       // LOG(INFO) << "BP - changing to FOLLOW_LANE";
     }
   }
