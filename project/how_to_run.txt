@@ -1,69 +1,24 @@
-Instructions for using websockets between python simulator client (simulatorAPI.py) and the C++ server (cserver)
-
-1. Get the dependancies for cserver and build it
-
-	cd project
-	./install-ubuntu.sh
-	cd cserver_dir (solution_cubic_spirals_STARTER)
-	cmake .
-	make
-	
-2. Running the server and the client
-	
-	// Log in as student
-	su - student
-	
-	//Go into project folder
-	cd nd-c5-planning-starter/project
-	
-	// Run this script 
-	./run_carla.sh
-	
-3. From a new terminal window, in the same project folder (but with workspace as root) 
-
-	//Go into project folder
-	cd nd-c5-planning-starter/project
-
-	//Run this script
-	./run_main.sh
-
-4. Closing the program
-
-	// kill the server first or else Carla will not reset the environment TODO(try to fix that)
-	// (cntrl+x) for cserver window 
-	// (cntrl+x) for client window
-	// close Carla
-	
-	
 New terminal window
 1. su - student
+// Will say permission denied, ignore and continue 
 2. cd /opt/carla-simulator/
 3. SDL_VIDEODRIVER=offscreen ./CarlaUE4.sh -opengl
 
 New terminal window
-4. git clone https://github.com/udacity/nd013-c5-planning-refresh.git
-5. cd nd013-c5-planning-refresh/project
+4. git clone https://github.com/udacity/nd013-c5-planning-starter.git
+5. cd nd013-c5-planning-starter/project
 6 ./install-ubuntu.sh
-7. cd solution-cubic-spirals
-8. rm -rf rpclib
-9. git clone https://github.com/rpclib/rpclib
-10. cmake .
-11. make
-12. cd nd013-c5-planning-refresh/project
-13. ./run_carla_ws.sh
+7. cd solution-cubic-spirals_STARTER
+9. cmake .
+10. make
+11. cd nd013-c5-planning-refresh/project
+12. ./run_main.sh
+// This will silently fail 
+13. ctrl + C to stop 
+14. ./run_main.sh again
+15. Go to desktop mode to see CARLA
 
 
-
-1. Clone project
-2. Cd project/solution_cubic_spirals
-3. cmake .
-4. make
-5. Cd project
-6.su - student
-7. ./run_carla.sh
-8. New window
-9.cd project
-10. ./run_main.sh
 
 // If error bind is already in use, or address already being used
 ps -aux | grep carla
