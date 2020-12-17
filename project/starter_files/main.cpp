@@ -75,7 +75,7 @@ BehaviorPlannerFSM behavior_planner(
       P_STOP_THRESHOLD_SPEED, P_REQ_STOPPED_TIME, P_REACTION_TIME,
       P_MAX_ACCEL, P_STOP_LINE_BUFFER);
 
-// Decalre and initialized the Motion Planner and all its class requirements
+// Declare and initialize the Motion Planner and all its class requirements
 MotionPlanner motion_planner(P_NUM_PATHS, P_GOAL_OFFSET, P_ERR_TOLERANCE);
 
 bool have_obst = false;
