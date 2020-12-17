@@ -36,7 +36,7 @@ constexpr std::array<float, 3> CIRCLE_OFFSETS = {-1.0, 1.0, 3.0};  // m
 constexpr std::array<float, 3> CIRCLE_RADII = {1.5, 1.5, 1.5};     // m
 
 constexpr double dt = 0.05;
-// Standard devaition parameters for x, x_dot, x_double_dot
+// Standard deviation parameters for x, x_dot, x_double_dot
 // to generate appropriate perturbed goals. EGO REF FRAME
 constexpr std::array<float, 3> SIGMA_X = {4, 1.0, 2.0};
 
@@ -50,7 +50,7 @@ constexpr std::array<float, 3> SIGMA_YAW = {0.17, 1.0, 1.0};
 // taken to finish the maneuver
 constexpr double SIGMA_T = 0.5;
 
-// This would be the filtered Jerk over one sec
+// This would be the filtered jerk over one sec
 constexpr double CONFORT_MAX_LAT_JERK = 0.9;               // m/s3
 constexpr double CONFORT_MAX_LON_JERK = 1.5;               // m/s3
 constexpr double CONFORT_ACCUM_LON_JERK_IN_ONE_SEC = 3.0;  // m/s3
