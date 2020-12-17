@@ -47,15 +47,15 @@ State BehaviorPlannerFSM::get_closest_waypoint_goal(
   waypoint_0 = lookahead_waypoints[lookahead_waypoints.size() - 1];
 
   is_goal_junction = waypoint_0->IsJunction();
-  // LOG(INFO) << "BP - Is Last wp in juntion? (0/1): " << is_goal_junction;
+  // LOG(INFO) << "BP - Is Last wp in junction? (0/1): " << is_goal_junction;
   auto cur_junction_id = waypoint_0->GetJunctionId();
   if (is_goal_junction) {
     if (cur_junction_id == _prev_junction_id) {
-      // LOG(INFO) << "BP - Last wp is in same juntion as ego. Juntion ID: "
+      // LOG(INFO) << "BP - Last wp is in same junction as ego. Junction ID: "
       //          << _prev_junction_id;
       is_goal_junction = false;
     } else {
-      // LOG(INFO) << "BP - Last wp is in different juntion than ego. Juntion
+      // LOG(INFO) << "BP - Last wp is in different junction than ego. Junction
       // ID: "
       //          << cur_junction_id;
       _prev_junction_id = cur_junction_id;
@@ -112,8 +112,8 @@ State BehaviorPlannerFSM::get_goal(const State& ego_state,
 State BehaviorPlannerFSM::state_transition(const State& ego_state, State goal,
                                            bool& is_goal_in_junction,
                                            string tl_state) {
-  // Check with the Behavior Planner to see what are we going to do and
-  // where is our next goal
+  // Check with the Behavior Planner to see what we are going to do and
+  // where our next goal is
   //
 
   goal.acceleration.x = 0;
@@ -152,8 +152,8 @@ State BehaviorPlannerFSM::state_transition(const State& ego_state, State goal,
 
     } else {
       // TODO-goal speed in nominal state: What should be the goal speed now
-      // that we know we are in Nominal state and we can continue freely??
-      // Remember that the speed is a vector!!
+      // that we know we are in nominal state and we can continue freely?
+      // Remember that the speed is a vector
       // HINT: _speed_limit * std::sin/cos (goal.rotation.yaw);
       goal.velocity.x = 1.0;  // <- Fix This
       goal.velocity.y = 1.0;  // <- Fix This
