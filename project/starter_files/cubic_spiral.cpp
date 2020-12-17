@@ -75,7 +75,7 @@ bool CubicSpiral::GenerateSpiral(const PathPoint& start, const PathPoint& end) {
   std::vector<double> theta(spiral_config().simpson_size, 0.0);
   std::vector<double> cos_theta(spiral_config().simpson_size, 0.0);
   std::vector<double> sin_theta(spiral_config().simpson_size, 0.0);
-  // partial derivatvies vectors for Jacobian
+  // partial derivatives vectors for Jacobian
   std::vector<double> ptp_p1(spiral_config().simpson_size, 0.0);
   std::vector<double> ptp_p2(spiral_config().simpson_size, 0.0);
   std::vector<double> ptp_sg(spiral_config().simpson_size, 0.0);
