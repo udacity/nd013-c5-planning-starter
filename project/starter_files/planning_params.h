@@ -47,7 +47,7 @@ constexpr std::array<float, 3> SIGMA_Y = {0.5, 1.0, 0.5};
 constexpr std::array<float, 3> SIGMA_YAW = {0.17, 1.0, 1.0};
 
 // Standard deviation for time (as in the time
-// taken to finish the maneuver
+// taken to finish the maneuver)
 constexpr double SIGMA_T = 0.5;
 
 // This would be the filtered jerk over one sec
