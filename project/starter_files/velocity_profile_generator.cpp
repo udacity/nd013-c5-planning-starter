@@ -41,7 +41,7 @@ implemented by isolating each case.
 
 For all trajectories, the required acceleration is given by _a_max (confortable
 accel).
-Look at the structs.h for details on the types of Maneouvers/states that the
+Look at the structs.h for details on the types of manuevers/states that the
 behavior planner can be in.
 */
 
@@ -112,7 +112,7 @@ std::vector<TrajectoryPoint> VelocityProfileGenerator::decelerate_trajectory(
   }
 
   /* If the brake distance exceeds the length of the path, then we cannot
-  perform a smooth deceleration and require a harder deceleration.Build the path
+  perform a smooth deceleration and require a harder deceleration.  Build the path
   up in reverse to ensure we reach zero speed at the required time.
   */
   if (brake_distance + decel_distance > path_length) {
@@ -157,7 +157,7 @@ std::vector<TrajectoryPoint> VelocityProfileGenerator::decelerate_trajectory(
     traj_point.relative_time = time;
     trajectory.push_back(traj_point);
 
-    // If the brake distance DOS NOT exceed the length of the path
+    // If the brake distance DOES NOT exceed the length of the path
   } else {
     auto brake_index{stop_index};
     auto temp_dist{0.0};
@@ -221,7 +221,7 @@ std::vector<TrajectoryPoint> VelocityProfileGenerator::decelerate_trajectory(
       time += time_step;
       vi = vf;
     }
-    // Nowe just need to add the last point.
+    // Now we just need to add the last point.
     auto i = stop_index;
     TrajectoryPoint traj_point;
     traj_point.path_point = spiral[i];
@@ -362,7 +362,7 @@ double VelocityProfileGenerator::calc_distance(const double& v_i,
     // v_i (initial velocity) to v_f (final velocity) at a constant
     // acceleration/deceleration "a". HINT look at the description of this
     // function. Make sure you handle div by 0
-    d = 0;  // <- Fix This
+    d = 0;  // <- Update
   }
   return d;
 }
@@ -370,7 +370,7 @@ double VelocityProfileGenerator::calc_distance(const double& v_i,
 /*
 Using v_f = sqrt(v_i ^ 2 + 2ad), compute the final speed for a given
 acceleration across a given distance, with initial speed v_i.
-Make sure to check the discriminant of the radical.If it is negative,
+Make sure to check the discriminant of the radical. If it is negative,
 return zero as the final speed.
 Inputs : v_i - the initial speed in m / s.
 v_f - the ginal speed in m / s.
@@ -380,7 +380,7 @@ double VelocityProfileGenerator::calc_final_speed(const double& v_i,
                                                   const double& a,
                                                   const double& d) const {
   double v_f{0.0};
-  // TODO-calc final speed: Calculate the final distance. HINT look at the
+  // TODO-calc final speed: Calculate the final distance. HINT: look at the
   // description of this function. Make sure you handle negative discriminant
   // and make v_f = 0 in that case. If the discriminant is inf or nan return
   // infinity
