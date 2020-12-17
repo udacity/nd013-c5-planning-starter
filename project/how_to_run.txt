@@ -8,7 +8,7 @@ New terminal window
 4. git clone https://github.com/udacity/nd013-c5-planning-starter.git
 5. cd nd013-c5-planning-starter/project
 6 ./install-ubuntu.sh
-7. cd solution-cubic-spirals_STARTER
+7. cd starter_files/
 9. cmake .
 10. make
 11. cd nd013-c5-planning-refresh/project
