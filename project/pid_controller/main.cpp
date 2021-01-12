@@ -43,8 +43,10 @@
 #include "motion_planner.h"
 #include "planning_params.h"
 #include "utils.h"
+#include "pid_controller.h"
 
 #include <iostream>
+#include <fstream>
 #include <uWS/uWS.h>
 #include <math.h>
 #include <vector>
@@ -248,21 +250,24 @@ int main ()
           vector< vector<double> > spirals_y;
           vector< vector<double> > spirals_v;
           vector<int> best_spirals;
-
+          
+          cout << "path planner called" << endl;
+          
           path_planner(x_points, y_points, v_points, yaw, velocity, goal, is_junction, tl_state, spirals_x, spirals_y, spirals_v, best_spirals);
-            // cout << v_points << endl;
+          cout << velocity << endl;
           // std::cout << typeid(v_points).name() << '\n';
           for (int i = v_points.size() - 1; i >= 0; i--) {
-            cout << v_points[i];
+            cout << v_points[i] << endl;
           };
           
-          double v_obj = 10;
+          double v_obj = 5;
           double error = 0;
           double error_throttle = v_obj - velocity;
           
           pid_throttle.UpdateError(error_throttle);
           pid_steer.UpdateError(error);
-          double throttle = pid_throttle.TotalError();
+          //double throttle = pid_throttle.TotalError();
+          double throttle = 3;
           double steer = pid_steer.TotalError();
           
           json msgJson;
@@ -270,7 +275,7 @@ int main ()
           msgJson["steer"] = steer;
           msgJson["trajectory_x"] = x_points;
           msgJson["trajectory_y"] = y_points;
-          msgJson["trajectory_v"] = v_points;
+          // msgJson["trajectory_v"] = v_points;
           msgJson["spirals_x"] = spirals_x;
           msgJson["spirals_y"] = spirals_y;
           msgJson["spirals_v"] = spirals_v;
@@ -296,7 +301,7 @@ int main ()
     });
 
   
-    h.onDisconnection([&h](uWS::WebSocket<uWS::SERVER> ws, int code, char *message, size_t length) 
+  h.onDisconnection([&h](uWS::WebSocket<uWS::SERVER> ws, int code, char *message, size_t length) 
     {
       ws.close();
       cout << "Disconnected" << endl;

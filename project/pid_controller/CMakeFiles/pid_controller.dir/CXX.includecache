@@ -151,6 +151,8 @@ iostream
 -
 fstream
 -
+typeinfo
+-
 json.hpp
 /home/workspace/nd013-c5-planning-starter/project/pid_controller/json.hpp
 carla/client/ActorBlueprint.h
@@ -188,6 +190,8 @@ utils.h
 pid_controller.h
 /home/workspace/nd013-c5-planning-starter/project/pid_controller/pid_controller.h
 iostream
+-
+fstream
 -
 uWS/uWS.h
 -
