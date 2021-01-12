@@ -3,25 +3,27 @@ PID controller with Carla Simulator
 
 Run Carla Simulator
 -------------------
-Open new window
-'su - student'
+- Open new window
+- `su - student`
 // Will say permission denied, ignore and continue 
-'cd /opt/carla-simulator/'
-'SDL_VIDEODRIVER=offscreen ./CarlaUE4.sh -opengl'
+- `cd /opt/carla-simulator/`
+- `SDL_VIDEODRIVER=offscreen ./CarlaUE4.sh -opengl`
 
 
 Run
 ---
-'cd nd013-c5-planning-starter/project'
-'./install-ubuntu.sh'
-'cd pid_controller/'
-'cmake .'
-'make'
-'cd nd013-c5-planning-starter/project'
-'./run_main_pid.sh'
+- `cd nd013-c5-planning-starter/project`
+- `./install-ubuntu.sh`
+- `cd pid_controller/`
+- `rm -rf rpclib`
+- `git clone https://github.com/rpclib/rpclib.git`
+- `cmake .`
+- `make`
+- `cd nd013-c5-planning-starter/project`
+- `./run_main_pid.sh`
 // This will silently fail 
 ctrl + C to stop 
-'./run_main.sh' (again)
+- `./run_main.sh` (again)
 Go to desktop mode to see CARLA
 
 

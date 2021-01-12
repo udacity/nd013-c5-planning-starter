@@ -24,6 +24,7 @@
 #include <vector>
 #include <iostream>
 #include <fstream>
+#include <typeinfo>
 
 
 #include "json.hpp"
@@ -253,9 +254,17 @@ int main ()
 
           path_planner(x_points, y_points, v_points, yaw, velocity, goal, is_junction, tl_state, spirals_x, spirals_y, spirals_v, best_spirals);
           
-          double error = 0;
+          // cout << v_points << endl;
+          // std::cout << typeid(v_points).name() << '\n';
+          for (int i = v_points.size() - 1; i >= 0; i--) {
+            cout << v_points[i];
+          };
           
-          pid_throttle.UpdateError(error);
+          double v_obj = 10;
+          double error = 0;
+          double error_throttle = v_obj - velocity;
+          
+          pid_throttle.UpdateError(error_throttle);
           pid_steer.UpdateError(error);
           double throttle = pid_throttle.TotalError();
           double steer = pid_steer.TotalError();
@@ -265,7 +274,7 @@ int main ()
           msgJson["steer"] = steer;
           msgJson["trajectory_x"] = x_points;
           msgJson["trajectory_y"] = y_points;
-          msgJson["trajectory_v"] = v_points;
+          msgJson["trajectory_v"] = throttle;
           msgJson["spirals_x"] = spirals_x;
           msgJson["spirals_y"] = spirals_y;
           msgJson["spirals_v"] = spirals_v;
