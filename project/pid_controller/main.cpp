@@ -26,7 +26,6 @@
 #include <fstream>
 #include <typeinfo>
 
-
 #include "json.hpp"
 #include <carla/client/ActorBlueprint.h>
 #include <carla/client/BlueprintLibrary.h>
@@ -44,7 +43,6 @@
 #include "motion_planner.h"
 #include "planning_params.h"
 #include "utils.h"
-#include "pid_controller.h"
 
 #include <iostream>
 #include <uWS/uWS.h>
@@ -79,7 +77,7 @@ BehaviorPlannerFSM behavior_planner(
       P_STOP_THRESHOLD_SPEED, P_REQ_STOPPED_TIME, P_REACTION_TIME,
       P_MAX_ACCEL, P_STOP_LINE_BUFFER);
 
-// Declare and initialize the Motion Planner and all its class requirements
+// Decalre and initialized the Motion Planner and all its class requirements
 MotionPlanner motion_planner(P_NUM_PATHS, P_GOAL_OFFSET, P_ERR_TOLERANCE);
 
 bool have_obst = false;
@@ -195,7 +193,6 @@ int main ()
 
   h.onMessage([](uWS::WebSocket<uWS::SERVER> ws, char *data, size_t length, uWS::OpCode opCode)
   {
-   
         // create instance pid
         PID pid_throttle = PID();
         PID pid_steer = PID(); 
@@ -219,7 +216,7 @@ int main ()
     
         auto s = hasData(data);
 
-    
+
         if (s != "") {
           auto data = json::parse(s);
 
@@ -253,8 +250,7 @@ int main ()
           vector<int> best_spirals;
 
           path_planner(x_points, y_points, v_points, yaw, velocity, goal, is_junction, tl_state, spirals_x, spirals_y, spirals_v, best_spirals);
-          
-          // cout << v_points << endl;
+            // cout << v_points << endl;
           // std::cout << typeid(v_points).name() << '\n';
           for (int i = v_points.size() - 1; i >= 0; i--) {
             cout << v_points[i];
@@ -274,7 +270,7 @@ int main ()
           msgJson["steer"] = steer;
           msgJson["trajectory_x"] = x_points;
           msgJson["trajectory_y"] = y_points;
-          msgJson["trajectory_v"] = throttle;
+          msgJson["trajectory_v"] = v_points;
           msgJson["spirals_x"] = spirals_x;
           msgJson["spirals_y"] = spirals_y;
           msgJson["spirals_v"] = spirals_v;

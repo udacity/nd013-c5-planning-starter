@@ -62,8 +62,9 @@ double diff_cost(vector<double> coeff, double duration,
                  std::array<double, 3> goals, std::array<float, 3> sigma,
                  double cost_weight);
 
-double collision_circles_cost_spiral(const std::vector<PathPoint>& spiral,
-                                     const std::vector<State>& obstacles);
+double collision_circles_cost_spiral(
+    const std::vector<PathPoint>& spiral,
+    const std::vector<State>& obstacles);
 
 double close_to_main_goal_cost_spiral(const std::vector<PathPoint>& spiral,
                                       State goal);
