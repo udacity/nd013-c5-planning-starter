@@ -50,6 +50,7 @@
 #include <uWS/uWS.h>
 #include <math.h>
 #include <vector>
+#include <cmath>
 
 using namespace std;
 using json = nlohmann::json;
@@ -69,6 +70,9 @@ string hasData(string s) {
     return "";
 }
 
+template <typename T> int sgn(T val) {
+    return (T(0) < val) - (val < T(0));
+}
 
 double angle_between_points(double x1, double y1, double x2, double y2){
   return atan2(y2-y1, x2-x1);
@@ -204,16 +208,20 @@ int main ()
         myfile.open ("pid_data.txt");
 
         // initialize values for pid steer
-        double Kpi_steer = 0.7;
-        double Kii_steer = 0.1;
-        double Kdi_steer = 0.1;
-        pid_steer.Init(Kpi_steer, Kii_steer, Kdi_steer);
+        double Kpi_steer = 0.3;
+        double Kii_steer = 0.0001;
+        double Kdi_steer = 0.08;
+        double output_lim_max_steer = 1;
+    	double output_lim_min_steer = -1;
+        pid_steer.Init(Kpi_steer, Kii_steer, Kdi_steer, output_lim_max_steer, output_lim_min_steer);
 
         // initialize values for pid throttle
-        double Kpi_throttle = 0.7;
-        double Kii_throttle = 0.1;
-        double Kdi_throttle = 0.1;
-        pid_throttle.Init(Kpi_throttle, Kii_throttle, Kdi_throttle);
+        double Kpi_throttle = 0.5;
+        double Kii_throttle = 0.05;
+        double Kdi_throttle = 0.8;
+        double output_lim_max_throttle = 1;
+    	double output_lim_min_throttle = -1;
+        pid_throttle.Init(Kpi_throttle, Kii_throttle, Kdi_throttle, output_lim_max_throttle, output_lim_min_throttle);
     
     
         auto s = hasData(data);
@@ -238,7 +246,6 @@ int main ()
           	vector<double> x_obst = data["obst_x"];
           	vector<double> y_obst = data["obst_y"];
           	set_obst(x_obst, y_obst, obstacles, have_obst);
-
           }
 
           State goal;
@@ -251,31 +258,94 @@ int main ()
           vector< vector<double> > spirals_v;
           vector<int> best_spirals;
           
+          
+          cout << "velocity received: ";
+          cout << velocity << endl;
+          
+          cout << "yaw received: ";
+          cout << yaw << endl;
+          
           cout << "path planner called" << endl;
           
           path_planner(x_points, y_points, v_points, yaw, velocity, goal, is_junction, tl_state, spirals_x, spirals_y, spirals_v, best_spirals);
-          cout << velocity << endl;
-          // std::cout << typeid(v_points).name() << '\n';
-          for (int i = v_points.size() - 1; i >= 0; i--) {
-            cout << v_points[i] << endl;
-          };
           
-          double v_obj = 5;
-          double error = 0;
+          
+          ////////////////////////////////////////
+          // Steering control 
+          ////////////////////////////////////////
+          
+          // Compute steer error
+          double error_steer;
+          double vect_direction_x;
+          double vect_direction_y;
+          vect_direction_x = x_points.back() - x_points[0];
+          vect_direction_y = y_points.back() - y_points[0];
+          
+          cout << "vect_direction_x: ";
+          cout << vect_direction_x << endl;
+          
+          cout << "vect_direction_y: ";
+          cout << vect_direction_y << endl;
+          
+          double trajectory_heading = atan2(vect_direction_y, vect_direction_x);
+          
+          error_steer = trajectory_heading - yaw;
+            
+          cout << "error_steer: ";
+          cout << error_steer << endl;
+          
+          // Compute control to apply
+          pid_steer.UpdateError(error_steer);
+          double steer_output = pid_steer.TotalError();
+          
+          cout << "steer_output: ";
+          cout << steer_output << endl;
+          
+          ////////////////////////////////////////
+          // Throttle control 
+          ////////////////////////////////////////
+
+          // Compute error of speed
+          double v_obj = 1;
           double error_throttle = v_obj - velocity;
           
-          pid_throttle.UpdateError(error_throttle);
-          pid_steer.UpdateError(error);
-          //double throttle = pid_throttle.TotalError();
-          double throttle = 3;
-          double steer = pid_steer.TotalError();
+          cout << "error_throttle: ";
+          cout << error_throttle << endl;
           
+          // Compute control to apply
+          pid_throttle.UpdateError(error_throttle);
+          double throttle = pid_throttle.TotalError();
+          double throttle_output;
+          double brake_output;
+         
+          
+          if (throttle > 0.0) {
+            throttle_output = throttle;
+            brake_output = 0;
+          }
+          else if (throttle >= -0.85) {
+            throttle_output = 0;
+            brake_output = 0;  
+          } else {
+            throttle_output = 0;
+            brake_output = (-throttle + 1)/(1-0.85);
+          }
+          
+          cout << "brake_output: ";
+          cout << brake_output << endl;
+          
+          cout << "throttle_output: ";
+          cout << throttle_output << endl;
+          
+          // Send control
           json msgJson;
-          msgJson["throttle"] = throttle;
-          msgJson["steer"] = steer;
+          msgJson["brake"] = brake_output;
+          msgJson["throttle"] = throttle_output;
+          msgJson["steer"] = steer_output;
+         
           msgJson["trajectory_x"] = x_points;
           msgJson["trajectory_y"] = y_points;
-          // msgJson["trajectory_v"] = v_points;
+          msgJson["trajectory_v"] = v_points;
           msgJson["spirals_x"] = spirals_x;
           msgJson["spirals_y"] = spirals_y;
           msgJson["spirals_v"] = spirals_v;

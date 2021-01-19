@@ -7,6 +7,7 @@
 #include "pid_controller.h"
 #include <vector>
 #include <iostream>
+#include <math.h>
 
 using namespace std;
 
@@ -14,10 +15,12 @@ PID::PID() {}
 
 PID::~PID() {}
 
-void PID::Init(double Kpi, double Kii, double Kdi) {
+void PID::Init(double Kpi, double Kii, double Kdi, double output_lim_maxi, double output_lim_mini) {
     Kp = Kpi;
     Ki = Kii;
     Kd = Kdi;
+    output_lim_max = output_lim_maxi;
+    output_lim_min = output_lim_mini;
 }
 
 
@@ -46,8 +49,7 @@ void PID::UpdateError(double cte) {
 }
 
 double PID::TotalError() {
-    double steer = -p_error - d_error - i_error;
-    return steer;
-
-
+    double control = p_error + d_error + i_error;
+    control = std::max(output_lim_min, std::min(control, output_lim_max));
+    return control;
 }

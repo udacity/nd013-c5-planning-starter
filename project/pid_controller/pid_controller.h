@@ -22,6 +22,12 @@ public:
     double Kp;
     double Ki;
     double Kd;
+  
+    /*
+    * Output limits
+    */
+    double output_lim_max;
+    double output_lim_min;
 
     /*
     * Constructor
@@ -36,7 +42,7 @@ public:
     /*
     * Initialize PID.
     */
-    void Init(double Kp, double Ki, double Kd);
+    void Init(double Kp, double Ki, double Kd, double output_lim_max, double output_lim_min);
 
     /*
     * Update the PID error variables given cross track error.
