@@ -14,6 +14,7 @@
 # **********************************************/
 
 
+# New version from Mathilde Badoual
 
 """
 Welcome to CARLA path planning
@@ -31,6 +32,7 @@ from __future__ import print_function
 import glob
 import os
 import sys
+import math
 
 try:
     sys.path.append(glob.glob('../carla/dist/carla-*%d.%d-%s.egg' % (
@@ -200,7 +202,7 @@ class World(object):
         return point.x, point.y, waypoint.transform.rotation.yaw * math.pi/180, is_goal_junction
 
     def move(self, sim_time, res=1):
-        global way_points, v_points, last_move_time, velocity, _prev_yaw, _view_yaw, _view_pitch, _view_radius, _pivot, steer, throttle
+        global way_points, v_points, last_move_time, velocity, _prev_yaw, _view_yaw, _view_pitch, _view_radius, _pivot, steer, throttle, forward_speed
         previous_index = 0
         start = carla.Transform()
         end = carla.Transform()
@@ -269,7 +271,7 @@ class World(object):
                     way_points[0].location.x = ratio * (way_points[1].location.x - way_points[0].location.x) + way_points[0].location.x
                     way_points[0].location.y = ratio * (way_points[1].location.y - way_points[0].location.y) + way_points[0].location.y
                     yaw = math.atan2(way_points[1].location.y-way_points[0].location.y, way_points[1].location.x-way_points[0].location.x)
-                
+                    
                 
                 way_points[0].rotation.yaw = yaw * 180 / math.pi
                 way_points[0].rotation.pitch = _road_pitch
@@ -297,8 +299,8 @@ class World(object):
                 _pivot.rotation.pitch  = _view_pitch * 180 / math.pi
                 _pivot.location.z += 2 + _view_radius * math.sin(math.pi + _view_pitch)
                 # Teleports the actor to a given transform (location and rotation):  
-                self.player.set_transform(way_points[0])                                
-            
+#                 self.player.set_transform(way_points[0])                                
+                self.player.apply_control(carla.VehicleControl(throttle=throttle, steer=steer, brake=brake))    
                 
 
     def restart(self):
@@ -413,7 +415,8 @@ class HUD(object):
         if not self._show_info:
             return
         t = world.player.get_transform()
-        v = v_points[0]
+        real_v = world.player.get_velocity()
+        v = math.sqrt(real_v.x**2 + real_v.y**2)
         c = world.player.get_control()
         colhist = world.collision_sensor.get_collision_history()
         collision = [colhist[x + self.frame - 200] for x in range(0, 200)]
@@ -426,10 +429,14 @@ class HUD(object):
             '',
             'Simulation time: % 12s' % datetime.timedelta(seconds=int(self.simulation_time)),
             '',
-            'Speed:   % 15.0f m/s' % v,
+            'Speed:   %0.2f m/s' % v,
             'Location:% 20s' % ('(% 5.1f, % 5.1f)' % (t.location.x, t.location.y)),
             'Height:  % 18.0f m' % t.location.z,
-            '']
+            '',
+            'Steer: %0.2f' % steer,
+            'Throttle: %0.2f' % throttle,
+            'Brake: %0.2f' % brake,
+        ]
         self._info_text += [
             '',
             'Collision:',
@@ -797,7 +804,7 @@ def game_loop(args):
 
         clock = pygame.time.Clock()
         
-        world.player.set_simulate_physics(False)
+        world.player.set_simulate_physics(True)
 
         # Spawn some obstacles to avoid
         batch = []
@@ -812,6 +819,9 @@ def game_loop(args):
                 vehicles_list.append(response.actor_id)
 
         start_time = world.hud.simulation_time
+        
+#         measurement_data, sensor_data = client.read_data()
+#         forward_speed = measurement_data.player_measurements.forward_speed
         
         while True:
             yield from asyncio.sleep(0.01) # check if any data from the websocket
@@ -836,8 +846,11 @@ def game_loop(args):
                 y_points = [point.location.y for point in way_points]
                 yaw = way_points[0].rotation.yaw * math.pi / 180
                 waypoint_x, waypoint_y, waypoint_t, waypoint_j = world.get_waypoint(x_points[-1], y_points[-1])
+                real_v = world.player.get_velocity()
+                velocity = math.sqrt(real_v.x**2 + real_v.y**2)
+                print('velocity sent: ', velocity)
     
-                ws.send(json.dumps({'traj_x': x_points, 'traj_y': y_points, 'traj_v': v_points ,'yaw': yaw, "velocity": velocity, 'time': sim_time, 'waypoint_x': waypoint_x, 'waypoint_y': waypoint_y, 'waypoint_t': waypoint_t, 'waypoint_j': waypoint_j, 'tl_state': _tl_state, 'obst_x': obst_x, 'obst_y': obst_y } ))
+                ws.send(json.dumps({'traj_x': x_points, 'traj_y': y_points, 'traj_v': v_points ,'yaw': _prev_yaw, "velocity": velocity, 'time': sim_time, 'waypoint_x': waypoint_x, 'waypoint_y': waypoint_y, 'waypoint_t': waypoint_t, 'waypoint_j': waypoint_j, 'tl_state': _tl_state, 'obst_x': obst_x, 'obst_y': obst_y } ))
                
             
             clock.tick_busy_loop(60)
@@ -864,7 +877,7 @@ def game_loop(args):
 
 
 def get_data():
-    global way_points, v_points, update_cycle, spirals_x, spirals_y, spirals_v, spiral_idx, _active_maneuver, steer, throttle
+    global way_points, v_points, update_cycle, spirals_x, spirals_y, spirals_v, spiral_idx, _active_maneuver, steer, throttle, brake
     data = ws.recv() # blocking call, thats why we use asyncio
     data = json.loads(str(data))
     dist_thresh = 0.1
@@ -879,9 +892,11 @@ def get_data():
     
     steer = data['steer']
     throttle = data['throttle']
+    brake = data['brake']
     
     print('steer: ', steer)
     print('throttle: ', throttle)
+    print('brake: ', brake)
 
     # Start at the point that is closest to the start way point
     if( len(way_points) > 1):

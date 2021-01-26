@@ -51,6 +51,7 @@
 #include <math.h>
 #include <vector>
 #include <cmath>
+#include <time.h>
 
 using namespace std;
 using json = nlohmann::json;
@@ -199,33 +200,38 @@ int main ()
 
   h.onMessage([](uWS::WebSocket<uWS::SERVER> ws, char *data, size_t length, uWS::OpCode opCode)
   {
+        time_t timer;
+        time_t prev_timer;
+    
+    	time(&prev_timer); 
+    
         // create instance pid
         PID pid_throttle = PID();
         PID pid_steer = PID(); 
     
         // create file to save values
-        ofstream myfile;
-        myfile.open ("pid_data.txt");
+        ofstream file_steer;
+        file_steer.open ("steer_pid_data.txt");
+    	ofstream file_throttle;
+        file_throttle.open ("throttle_pid_data.txt");
 
         // initialize values for pid steer
-        double Kpi_steer = 0.3;
-        double Kii_steer = 0.0001;
-        double Kdi_steer = 0.08;
-        double output_lim_max_steer = 1;
-    	double output_lim_min_steer = -1;
+        double Kpi_steer = 0.34611;
+        double Kii_steer = 0.0370736;
+        double Kdi_steer = 3.5349;
+        double output_lim_max_steer = 1.2;
+    	double output_lim_min_steer = -1.2;
         pid_steer.Init(Kpi_steer, Kii_steer, Kdi_steer, output_lim_max_steer, output_lim_min_steer);
 
         // initialize values for pid throttle
         double Kpi_throttle = 0.5;
         double Kii_throttle = 0.05;
-        double Kdi_throttle = 0.8;
+        double Kdi_throttle = 0.1;
         double output_lim_max_throttle = 1;
     	double output_lim_min_throttle = -1;
         pid_throttle.Init(Kpi_throttle, Kii_throttle, Kdi_throttle, output_lim_max_throttle, output_lim_min_throttle);
     
-    
         auto s = hasData(data);
-
 
         if (s != "") {
           auto data = json::parse(s);
@@ -258,7 +264,6 @@ int main ()
           vector< vector<double> > spirals_v;
           vector<int> best_spirals;
           
-          
           cout << "velocity received: ";
           cout << velocity << endl;
           
@@ -274,6 +279,11 @@ int main ()
           // Steering control 
           ////////////////////////////////////////
           
+          seconds = difftime(timer, prev_timer); 
+          
+          double new_delta_time = ;
+          pid_steer.UpdateDeltaTime(new_delta_time)
+            
           // Compute steer error
           double error_steer;
           double vect_direction_x;
@@ -281,17 +291,11 @@ int main ()
           vect_direction_x = x_points.back() - x_points[0];
           vect_direction_y = y_points.back() - y_points[0];
           
-          cout << "vect_direction_x: ";
-          cout << vect_direction_x << endl;
-          
-          cout << "vect_direction_y: ";
-          cout << vect_direction_y << endl;
-          
           double trajectory_heading = atan2(vect_direction_y, vect_direction_x);
           
           error_steer = trajectory_heading - yaw;
             
-          cout << "error_steer: ";
+          cout << "error_steer: ";           
           cout << error_steer << endl;
           
           // Compute control to apply
@@ -301,13 +305,23 @@ int main ()
           cout << "steer_output: ";
           cout << steer_output << endl;
           
+          file_steer  << i ;
+          file_steer  << " " << error_steer;
+          file_steer  << " " << steer_output << endl;
+          
           ////////////////////////////////////////
           // Throttle control 
           ////////////////////////////////////////
 
           // Compute error of speed
-          double v_obj = 1;
+          double v_obj = v_points.back();
           double error_throttle = v_obj - velocity;
+          
+          cout << "v_obj: ";
+          cout << v_obj << endl;
+          
+          cout << "velocity: ";
+          cout << velocity << endl;
           
           cout << "error_throttle: ";
           cout << error_throttle << endl;

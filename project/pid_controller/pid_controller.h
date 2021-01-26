@@ -28,6 +28,11 @@ public:
     */
     double output_lim_max;
     double output_lim_min;
+  
+    /*
+    * Delta time
+    */
+    double delta_time;
 
     /*
     * Constructor
@@ -53,6 +58,12 @@ public:
     * Calculate the total PID error.
     */
     double TotalError();
+  
+    /*
+    * Update the delta time.
+    */
+    double UpdateDeltaTime(double new_delta_time);
+}
 };
 
 #endif //PID_CONTROLLER_H

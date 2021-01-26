@@ -23,7 +23,7 @@ Run
 - `./run_main_pid.sh`
 // This will silently fail 
 ctrl + C to stop 
-- `./run_main.sh` (again)
+- `./run_main_pid.sh` (again)
 Go to desktop mode to see CARLA
 
 
