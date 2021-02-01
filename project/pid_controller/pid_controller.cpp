@@ -61,6 +61,6 @@ double PID::TotalError() {
 }
 
 double PID::UpdateDeltaTime(double new_delta_time) {
-    delta_time = new_delta_time
+    delta_time = new_delta_time;
     return delta_time;
 }

@@ -197,43 +197,47 @@ int main ()
 {
   cout << "starting server" << endl;
   uWS::Hub h;
-
+  
+  double seconds;
+  int i = 0;
+  
+  time_t timer;
+  time_t prev_timer;
+  
+  // create file to save values
+  ofstream file_steer;
+  file_steer.open("steer_pid_data.txt");
+  ofstream file_throttle;
+  file_throttle.open("throttle_pid_data.txt");
+  
+  // create instance pid
+  PID pid_throttle = PID();
+  PID pid_steer = PID(); 
+ 
+  // initialize values for pid steer
+  double Kpi_steer = 0.5;
+  double Kii_steer = 0.01;
+  double Kdi_steer = 0.01;
+  double output_lim_max_steer = 1.2;
+  double output_lim_min_steer = -1.2;
+  pid_steer.Init(Kpi_steer, Kii_steer, Kdi_steer, output_lim_max_steer, output_lim_min_steer);
+  
+  // initialize values for pid throttle
+  double Kpi_throttle = 0.5;
+  double Kii_throttle = 0.05;
+  double Kdi_throttle = 0.1;
+  double output_lim_max_throttle = 1;
+  double output_lim_min_throttle = -1;
+  pid_throttle.Init(Kpi_throttle, Kii_throttle, Kdi_throttle, output_lim_max_throttle, output_lim_min_throttle);
+    
   h.onMessage([](uWS::WebSocket<uWS::SERVER> ws, char *data, size_t length, uWS::OpCode opCode)
   {
-        time_t timer;
-        time_t prev_timer;
-    
-    	time(&prev_timer); 
-    
-        // create instance pid
-        PID pid_throttle = PID();
-        PID pid_steer = PID(); 
-    
-        // create file to save values
-        ofstream file_steer;
-        file_steer.open ("steer_pid_data.txt");
-    	ofstream file_throttle;
-        file_throttle.open ("throttle_pid_data.txt");
-
-        // initialize values for pid steer
-        double Kpi_steer = 0.34611;
-        double Kii_steer = 0.0370736;
-        double Kdi_steer = 3.5349;
-        double output_lim_max_steer = 1.2;
-    	double output_lim_min_steer = -1.2;
-        pid_steer.Init(Kpi_steer, Kii_steer, Kdi_steer, output_lim_max_steer, output_lim_min_steer);
-
-        // initialize values for pid throttle
-        double Kpi_throttle = 0.5;
-        double Kii_throttle = 0.05;
-        double Kdi_throttle = 0.1;
-        double output_lim_max_throttle = 1;
-    	double output_lim_min_throttle = -1;
-        pid_throttle.Init(Kpi_throttle, Kii_throttle, Kdi_throttle, output_lim_max_throttle, output_lim_min_throttle);
-    
         auto s = hasData(data);
-
+    
+    	cout << "................" << endl;
+    
         if (s != "") {
+          
           auto data = json::parse(s);
 
           vector<double> x_points = data["traj_x"];
@@ -274,15 +278,17 @@ int main ()
           
           path_planner(x_points, y_points, v_points, yaw, velocity, goal, is_junction, tl_state, spirals_x, spirals_y, spirals_v, best_spirals);
           
-          
           ////////////////////////////////////////
           // Steering control 
           ////////////////////////////////////////
           
           seconds = difftime(timer, prev_timer); 
           
-          double new_delta_time = ;
-          pid_steer.UpdateDeltaTime(new_delta_time)
+          cout << "seconds: ";           
+          cout << seconds << endl;
+          
+          double new_delta_time = 1;
+          pid_steer.UpdateDeltaTime(new_delta_time);
             
           // Compute steer error
           double error_steer;
@@ -326,12 +332,13 @@ int main ()
           cout << "error_throttle: ";
           cout << error_throttle << endl;
           
+          pid_throttle.UpdateDeltaTime(new_delta_time);
+          
           // Compute control to apply
           pid_throttle.UpdateError(error_throttle);
           double throttle = pid_throttle.TotalError();
           double throttle_output;
           double brake_output;
-         
           
           if (throttle > 0.0) {
             throttle_output = throttle;
@@ -344,6 +351,11 @@ int main ()
             throttle_output = 0;
             brake_output = (-throttle + 1)/(1-0.85);
           }
+          
+          file_throttle  << i ;
+          file_throttle  << " " << error_throttle;
+          file_throttle  << " " << brake_output;
+          file_throttle  << " " << throttle_output << endl;
           
           cout << "brake_output: ";
           cout << brake_output << endl;
@@ -371,14 +383,18 @@ int main ()
           msgJson["update_point_thresh"] = 16;
 
           auto msg = msgJson.dump();
+          
+          i = i + 1;
   
       ws.send(msg.data(), msg.length(), uWS::OpCode::TEXT); 
-      
-    }
+         
+    } 
 
   });
-  
-  
+ 
+  file_steer.close();
+  file_throttle.close();
+    
   h.onConnection([](uWS::WebSocket<uWS::SERVER> ws, uWS::HttpRequest req) 
   {
       cout << "Connected!!!" << endl;
@@ -391,13 +407,13 @@ int main ()
       cout << "Disconnected" << endl;
     });
 
-    int port = 4567;
-    if (h.listen("0.0.0.0", port))
+  int port = 4567;
+  if (h.listen("0.0.0.0", port))
     {
       cout << "Listening to port " << port << endl;
       h.run();
     } 
-    else 
+  else 
     {
       cerr << "Failed to listen to port" << endl;
       return -1;
