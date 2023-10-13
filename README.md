@@ -26,6 +26,8 @@ git clone https://github.com/udacity/nd013-c5-planning-starter.git
 cd nd013-c5-planning-starter
 ```
 
+![plot](images/project-setup.png)
+
 To get started, switch to the project directory
 
 ```bash
@@ -86,6 +88,13 @@ More details can be found at [CARLA Quick Start Installation](https://carla.read
    ./CarlaUE4.sh
    ```
 
+   ![plot](images/carla-test.png)
+
+   Then, in a few seconds the Carla Simulator will launch:
+
+   ![plot](images/carla-test-window.png)
+
+
 ### Install all dependencies
 
 Run the following commands in another terminal window inside the project folder:
@@ -93,14 +102,25 @@ Run the following commands in another terminal window inside the project folder:
 ./install-ubuntu.sh
 ```
 
+![plot](images/dependencies-install.png)
+
 Then, compile the `rpclib` library. This library is a msgpack-rpc library written using modern C++. The goal of this library is to provide a simple, no-nonsense RPC solution.
 ```bash
 cd starter_files
 rm -rf rpclib
 git clone https://github.com/rpclib/rpclib.git
+```
+
+![plot](images/rpclib-clone.png)
+
+```bash
 cmake .
 make
 ```
+
+![plot](images/rpclib-build.png)
+
+
 
 ## Project Setup Instructions
 
@@ -128,7 +148,7 @@ cd nd013-c5-planning-starter/project
 # ctrl + C to stop 
 ```
 
-![plot](carla-simulator.png)
+![plot](images/carla-simulator.png)
 
 If error bind is already in use, or address already being used
 ```bash
