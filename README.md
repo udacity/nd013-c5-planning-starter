@@ -124,7 +124,7 @@ Once you log into the VM, open a Terminal window.
 Fork the repository to your Github account and clone the repository to the workspace using the commands below. 
 
 ```bash
-git clone https://github.com/udacity/nd013-c5-planning-refresh.git
+git clone https://github.com/udacity/nd013-c5-planning-starter.git
 ```
 
 Change to the project directory.
@@ -147,9 +147,6 @@ You will find the following files in the project directory.
 ├── simulatorAPI.py
 └── starter_files
 ```
-
-
-
 
 <br/><br/>
 
@@ -203,9 +200,6 @@ To give some old context, when we had **rpclib/** directory inside the starter f
 cd starter_files
 rm -rf rpclib
 git clone https://github.com/rpclib/rpclib.git
-cd rpclib
-cmake .
-make
 ```
 This library is a **msgpack-rpc** library written using modern C++. The goal of building this library was to provide a simple RPC solution. However, all of the above-mentioned steps are **no longer needed** in the current version of the project strarter code. 
 
@@ -219,6 +213,7 @@ When you finish updating the project files, you can execute the project using th
 # Build the project
 # Run the following commands from the starter_files/ directory
 cmake .
+# The command below compiles your c++ code. Run it after each time you edit the CPP or Header files
 make
 ```
 
