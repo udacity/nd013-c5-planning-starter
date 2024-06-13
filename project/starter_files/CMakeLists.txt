@@ -22,6 +22,8 @@ set(CARLA_BUILD_LIBCARLA_DIR ${CARLA_BUILD_DIR}/libcarla-client-build.release/Li
 set(CARLA_BUILD_BOOST_LIB_DIR ${CARLA_BUILD_BOOST_DIR}/lib)
 set(CARLA_BUILD_RECAST_LIB_DIR ${CARLA_BUILD_RECAST_DIR}/lib)
 set(CARLA_BUILD_RPCLIB_LIB_DIR ${CARLA_BUILD_RPCLIB_DIR}/lib)
+set(LIBUV_INCLUDE_DIR /usr/include/uv.h)   # Path to the uv.h directory
+set(LIBUV_LIBRARY /usr/lib/x86_64-linux-gnu/libuv.so)  # Path to the libuv library
 
 set(carla_libs ${CARLA_BUILD_BOOST_LIB_DIR}/libboost_filesystem.a ${CARLA_BUILD_BOOST_LIB_DIR}/libboost_program_options.a ${CARLA_BUILD_BOOST_LIB_DIR}/libboost_python38.a ${CARLA_BUILD_BOOST_LIB_DIR}/libboost_system.a ${CARLA_BUILD_LIBCARLA_DIR}/libcarla_client.a ${CARLA_BUILD_RPCLIB_LIB_DIR}/librpc.a ${CARLA_BUILD_RECAST_LIB_DIR}/libDebugUtils.a ${CARLA_BUILD_RECAST_LIB_DIR}/libDetour.a ${CARLA_BUILD_RECAST_LIB_DIR}/libDetourCrowd.a ${CARLA_BUILD_RECAST_LIB_DIR}/libDetourTileCache.a ${CARLA_BUILD_RECAST_LIB_DIR}/libRecast.a)
 
