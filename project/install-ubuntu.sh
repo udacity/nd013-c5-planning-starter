@@ -1,4 +1,5 @@
 #! /bin/bash
+sudo apt-get update
 sudo apt-get install libuv1-dev libssl-dev libz-dev
 git clone https://github.com/uWebSockets/uWebSockets 
 cd uWebSockets
@@ -12,6 +13,3 @@ cd ..
 cd ..
 sudo rm -r uWebSockets
 sudo ln -s /usr/lib64/libuWS.so /usr/lib/libuWS.so
-
-sudo apt-get update
-sudo apt-get install libuv1-dev
