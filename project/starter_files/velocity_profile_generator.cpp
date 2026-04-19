@@ -203,7 +203,7 @@ std::vector<TrajectoryPoint> VelocityProfileGenerator::decelerate_trajectory(
       trajectory.push_back(traj_point);
       auto dist = utils::distance(spiral[i + 1], spiral[i]);  // ??
       if (dist > DBL_EPSILON)
-        time_step = vi / dist;
+        time_step = dist / vi;
       else
         time_step = 0.00;
 
